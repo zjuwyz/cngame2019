@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>GAMES 2019 Registration</title>
+
+    <link href="./static/css/register_style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src='./static/js/jquery1.min.js'></script>
+
+</head>
+
+<body>
+
+    <div class='body_main'>
+
+        <div class='box_title'>
+            <div class='text_content'>
+                <h1>GAMES 2019 注册</h1>
+            </div>
+        </div>
+
+        <div class='box_main'>
+            <div id="register" class="register">
+                <div id="form" >
+                    <div id="form_submit" class="form_submit">
+                        <div class="fieldset">
+
+                            <div class="field-group">
+                                <label class="required title">姓名</label>
+                                <span class="control-group" id="name_input">
+                                    <div class="input_add_long_background">
+                                        <input class="register_input" type="text" id="name" name="name" value="" onblur="__changeUserName('name');">
+                                    </div>
+                                </span>
+                                <label class="tips" >*</label>
+                            </div>
+                            <div class="field-group">
+                                <label class="required title">单位</label>
+                                <span class="control-group" id="affiliation_input">
+                                    <div class="input_add_long_background">
+                                        <input class="register_input" type="text" id="affiliation" name="affiliation" value=""
+                                            onblur="__changeUserName('affiliation');">
+                                    </div>
+                                </span>
+                                <label class="tips">*</label>
+                            </div>
+                            <div class="field-group">
+                                <label class="required title">职称</label>
+                                <span class="control-group" id="title_input">
+                                    <div class="input_add_long_background">
+                                        <input class="register_input" type="text" id="title" name="title" value=""
+                                            onblur="__changeUserName('title');">
+                                    </div>
+                                </span>
+                                <label class="tips">*</label>
+                            </div>
+
+                            <div class="field-group">
+                                <label class="required title">职务</label>
+                                <span class="control-group" id="position_input">
+                                    <div class="input_add_long_background">
+                                        <input class="register_input" type="text" id="position" name="position" value=""
+                                            onblur="__changeUserName('position');">
+                                    </div>
+                                </span>
+                            </div>
+
+                            <div class="field-group">
+                                <label class="required title">研究方向</label>
+                                <span class="control-group" id="field_input">
+                                    <div class="input_add_long_background">
+                                        <input class="register_input" type="text" id="research" name="research" value=""
+                                            onblur="__changeUserName('research');">
+                                    </div>
+                                </span>
+                            </div>
+
+                            <div class="field-group">
+                                <label class="required title">Email</label>
+                                <span class="control-group" id="email_input">
+                                    <div class="input_add_long_background">
+                                        <input class="register_input" type="text" id="email" name="email" value=""
+                                            onblur="__changeUserName('email');">
+                                    </div>
+                                </span>
+                                <label class="tips">*</label>
+                            </div>
+
+                            <div class="field-group">
+                                <label class="required title">电话号码</label>
+                                <span class="control-group" id="mobile_input">
+                                    <div class="input_add_long_background">
+                                        <input class="register_input" type="text" id="mobile" name="mobile" value=""
+                                            onblur="__changeUserName('mobile');">
+                                    </div>
+                                </span>
+                                <label class="tips">*</label>
+                            </div>
+						<!--
+							<div class="field-group">
+                                <label class="required title">论文编号</label>
+                                <span class="control-group" id="paper_input">
+                                    <div class="input_add_long_background">
+                                        <input class="register_input" type="text" id="paper" name="paper" value=""
+                                            onblur="__changeUserName('paper');">
+                                    </div>
+                                </span>
+                                <label class="tips">* 若无，请填“无”</label>
+                            </div>
+							
+							<div class="field-group">
+                                <label class="required title">CCF编号</label>
+                                <span class="control-group" id="member_input">
+                                    <div class="input_add_long_background">
+                                        <input class="register_input" type="text" id="member" name="member" value=""
+                                            onblur="__changeUserName('member');">
+                                    </div>
+                                </span>
+                                <label class="tips">* 若无，请填“无”</label>
+                            </div>
+							
+                            <div class="field-group" id="register-type" style="height:130px!important">
+                                <label class="required title">Registration type</label>
+                                <span class="control-group" style="line-height:28px; height: 100%;">
+									<table style="width:100%;">
+									<tr>
+									<th></th>
+									<th>CCF Member</th>
+									<th >Non-CCF Member</th>
+									</tr>
+									<tr>
+									<th  style="text-align:left; width:20%;">Student</th>
+									<th><input type="radio" value="0" name="type">1400 RMB
+									</br></input></th>
+									<th style="text-align:center;"><input type="radio" value="1" name="type">1800 RMB
+                                    </br></input></th>
+									</tr>
+									<tr>
+									<th style="text-align:left;">General</th>
+									<th><input type="radio" value="2" name="type">2400 RMB
+                                    </br></input></th>
+									<th ><input type="radio" value="3" name="type">3000 RMB
+                                   </br></input></th>
+									</tr>
+									</table>
+                                </span>
+                                <label class="tips" >*</label>
+                                    
+                               
+                            </div>
+                            <div class="field-group">
+                                <label class="required title">发票抬头</label>
+                                <span class="control-group" id="receipt_input">
+                                    <div class="input_add_long_background">
+                                        <input class="register_input" type="text" id="receipt" name="receipt" value=""
+                                        onblur="__changeUserName('receipt');" >
+                                    </div>
+                                </span>
+                                <label class="tips">* 若无，请填“无”</label>
+                            </div>
+
+                            <div class="field-group" style="height:100px!important">
+                                    <label class="required title">纳税人识别号</label>
+                                    <span class="control-group" id="receipt_number_input">
+                                        <div class="input_add_long_background">
+                                            <input class="register_input" type="text" id="receipt_number" name="receipt_number" value=""
+                                            onblur="__changeUserName('receipt_number');" >
+                                        </div>
+                                    </span>
+                                    <label class="tips">* 若无，请填“无”</label>
+                                </div>
+
+							
+                           <div class="field-group" id="Accommodation-type" style="height:300px!important; font-size:12pt;">
+                                <label class="required title">Accommodation</label>
+                                <p id='accommodation_type_input'></p>
+                                <span class="control-group" style="line-height:28px; height: 100%;">                                    
+                                    <input type="radio" value="0" name="accom-type">
+                                    No need</br></input>
+                                    <input type="radio" value="1" name="accom-type">
+                                    Superior single room, 480 RMB per day</br></input>
+                                    <input type="radio" value="2" name="accom-type">
+                                    Superior double room, 480 RMB per day</br></input>
+                                    </span>
+								<label class="tips" >* From May 5 to May 7, 2019, the room price is 480 RMB per day.</label>                                   
+                            </div>
+							-->
+                        </div>
+                    </div>
+
+                    <div>
+                        * <b style="color:red; margin-top: 10px;">收到报名序号才是注册成功，如果注册之后没有收到报名序号，请及时联系我们。</b>
+                        <br>
+                        * 若遗忘报名序号，可使用 相同姓名+手机号+相同注册类型 再次注册，返回报名序号相同。
+                        <br>
+                        * 如果遇到注册问题，请Email联系<a>chinavr_reg@163.com</a>。
+                    </div>
+
+                    <div id="div_submit" class="div_submit">
+                        <div class='div_submit_button'>
+                            <input onclick="check()" id="submit" value="注册" class='button_button disabled'>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <div class='box_bottom'></div>
+
+    </div>
+
+    <script type="text/javascript">
+       
+        function __changeUserName(of) {
+            var username = $('#' + of).val();
+            if (of == 'email') {
+                if (username.search(/^[\w\.+-]+@[\w\.+-]+$/) == -1) {
+                    showTooltips('email_input', '请输入正确的邮箱地址');
+                    return;
+                }
+            } else if (of == 'mobile') {
+                if (username == '' || !isMobilePhone(username)) {
+                    showTooltips('mobile_input', '请输入正确的电话号码');
+                    return;
+                }
+            } else if (of == 'name') {
+                if (username == '') {
+                    showTooltips('name_input', '请输入姓名');
+                    return;
+                }
+            } else if (of == 'affiliation') {
+                if (username == '') {
+                    showTooltips('affiliation_input', '请输入单位');
+                    return;
+                }
+            }/* else if (of == 'paper') {
+                if (username == '') {
+                    showTooltips('paper_input', '请输入论文编号');
+                    return;
+                }
+			} else if (of == 'member') {
+                if (username == '') {
+                    showTooltips('member_input', 'please enter your CCF number');
+                    return;
+                }*/
+            } else if (of == 'title') {
+                if (username == '') {
+                    showTooltips('title_input', '请输入职称');
+                    return;
+                }
+            } /*else if (of == 'receipt') {
+                if (username == '') {
+                    showTooltips('receipt_input', 'please enter invoice title');
+                    return;
+                }
+            } else if (of == 'receipt_number') {
+                if (username == '') {
+                    showTooltips('receipt_number_input', 'please enter taxpayer identification number');
+                    return;
+                }
+            }*/
+            
+        }
+
+        function checkEmail(email) {
+            if (email.search(/^.+@.+$/) == -1) {
+                showTooltips('email_input', '邮箱地址格式不正确');
+            } else {
+                hideTooltips('email_input');
+            }
+        }
+
+        function check() {
+            hideAllTooltips();
+            var ckh_result = true;
+            if ($('#name').val() == '') {
+                showTooltips('name_input', '姓名不能为空');
+                ckh_result = false;
+            }
+
+            if ($('#affiliation').val() == '') {
+                showTooltips('affiliation_input', '单位不能为空');
+                ckh_result = false;
+            }
+            if ($('#title').val() == '') {
+                showTooltips('title_input', '职称不能为空');
+                ckh_result = false;
+            }
+            if ($('#email').val() == '') {
+                showTooltips('email_input', '邮箱不能为空');
+                ckh_result = false;
+            }
+            if ($('#mobile').val() == '' || !isMobilePhone($('#mobile').val())) {
+                showTooltips('mobile_input', '手机号码不正确');
+                ckh_result = false;
+            }
+			/*
+			if ($('#paper').val() == '') {
+                showTooltips('paper_input', 'Paper number cannot be empty');
+                ckh_result = false;
+            }
+			
+			if ($('#member').val() == '') {
+                showTooltips('member_input', 'CCF number cannot be empty');
+                ckh_result = false;
+            }
+            
+             if ($('#receipt').val() == '') {
+                showTooltips('receipt_input', 'Invoice title cannot be empty');
+                ckh_result = false;
+            }
+
+             if ($('#receipt_number').val() == '') {
+                showTooltips('receipt_number_input', 'Taxpayer identification number cannot be empty');
+                ckh_result = false;
+            }
+            
+            var selected = $("input[name=type]:checked").val()
+            if (selected == undefined){
+                showTooltips('register_type_input', 'Select registration type');
+                ckh_result = false;
+            }
+			 var selected = $("input[name=accom-type]:checked").val()
+            if (selected == undefined){
+                showTooltips('accommodation_type_input', 'Select accommodation type');
+                ckh_result = false;
+            } */
+            if (ckh_result){
+
+                var _data = {
+                    "name": $('#name').val(),
+                    "affiliation": $('#affiliation').val(),
+                    "title" :$('#title').val(),
+                    "position": $('#position').val(),
+                    "field": $('#research').val(),
+                    "email": $('#email').val(),
+                    "telnumber": $('#mobile').val(),
+					//"paper_number": $('#paper').val(),
+					//"member_number": $('#member').val(),
+                    //"user_type": $("input[name=type]:checked").val(),
+                    //"receipt_title": $('#receipt').val(),
+                    //"receipt_number": $('#receipt_number').val(),
+					//"accommodation": $("input[name=accom-type]:checked").val()
+                }
+
+                $.ajax({
+                    async: false,
+                    url: "https://rubbly.cn/cad/api/user/add",
+                    type: "POST",
+                    data: _data,
+                    dataType: "jsonp",
+                    jsonp: 'jsoncallback',
+                    success: function(json) {
+                        console.log(json);
+                        var status = json.status;
+                        if(status >= 0){
+                            if(confirm("报名完成，您的报名序号为"+status+"，请牢记您的报名序号。是否关闭页面?")){
+                                window.opener=null;
+                                window.open('','_self');
+                                window.close();
+                            }
+                        } 
+                        else if(status < -100){
+                            num = 0 - status - 100
+                            alert("您已经报名，您的报名序号为"+num+")");
+                        }
+                        else{
+                            alert(json.msg.errmsg);
+                        }
+                    }
+		        });
+            }
+            return ckh_result;
+        }
+
+        function checkMobilePhone(telphone) {
+            if (telphone == '' || !isMobilePhone(telphone)) {
+                showTooltips('mobile_input', '请输入正确的手机号');
+            } else {
+                hideTooltips('mobile_input');
+            }
+        }
+
+        function isMobilePhone(value) {
+            if (value.search(/^(\+\d{2,3})?\d{11}$/) == -1)
+                return false;
+            else
+                return true;
+        } 
+
+        /*Error message Tooltips*/
+        $(document).ready(function(){
+            /*ç‚¹å‡»éšè—é”™è¯¯æç¤º,å¦‚æžœä¸æƒ³è®©æç¤ºç‚¹å‡»æ¶ˆå¤±,éœ€è¦åŠ ä¸Šclass='not_click_hide'*/
+            $('.control-group input').not('.not_click_hide').focus(function(){
+                hideTooltips($(this).parent().parent().attr('id'));
+            });
+        });
+        
+        function showTooltips(msgid,msg,time){
+            if (msgid==''){ return; }
+            if (msg==''){ msg='Error!'; }
+            $('#'+msgid).prepend("<div class='for_fix_ie6_bug' style='position:relative;'><div class='tooltips_main'><div class='tooltips_box'><div class='tooltips'><div class='msg'>"+msg+"</div></div><div class='ov'></div></div></div></div>");
+            $('#'+msgid+' .tooltips_main').fadeIn("slow").animate({ marginTop: "-23px"}, {queue:true, duration:400});
+            try{
+                if(typeof time != "undefined"){
+                    setTimeout('hideTooltips("'+msgid+'")',time);
+                }
+            }catch(err){}
+            
+        }
+        function hideTooltips(msgid){
+            try{
+                $('#'+msgid).find('.tooltips_main').fadeOut("slow");
+                $('#'+msgid).find('.tooltips_main').remove();
+            }catch(e){}
+        }
+        function hideAllTooltips(){
+            $('.tooltips_main').fadeOut("slow");
+            $('.tooltips_main').remove();
+        }
+        /*End error message tooltips*/
+    </script>
+
+</body>
+
+</html>
